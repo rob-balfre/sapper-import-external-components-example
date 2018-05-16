@@ -7,7 +7,7 @@ module.exports = {
   target: 'node',
   resolve: {
     extensions: ['.js', '.json', '.html'],
-    mainFields: ['svelte', 'module', 'browser', 'main']
+    symlinks: false
   },
   externals: Object.keys(pkg.dependencies).filter(key => !key.includes('svelte')),
   module: {
